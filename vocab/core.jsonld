@@ -11,77 +11,24 @@
     },
     "@graph": [
         {
-            "@id": "core:Address",
+            "@id": "core:FinancialIdentity",
             "@type": "rdfs:Class",
-            "rdfs:comment": "The location at which a particular trade related organization or person may be found or reached.",
-            "rdfs:label": "Address",
+            "rdfs:comment": "A financial identification for an organization.",
+            "rdfs:label": "FinancialIdentity",
             "unece:cefactElementMetadata": [
                 {
-                    "@id": "cefact:Trade_Address.Details",
+                    "@id": "cefact:Financial_Identity.Details",
                     "@type": "unece:AggregateBIE",
-                    "unece:cefactUNId": "UN01004533",
-                    "rdfs:comment": "The location at which a particular trade related organization or person may be found or reached."
+                    "unece:cefactUNId": "UN01013217",
+                    "rdfs:comment": "A financial identification for an organization."
                 }
             ]
         },
         {
-            "@id": "core:Document",
-            "@type": "rdfs:Class",
-            "rdfs:comment": [
-                "A collection of financing related data that provides an overview of key points.",
-                "A collection of data that reports the result of a financing request.",
-                "The set of characteristics shared by all individual transactions grouped for this financing request document."
-            ],
-            "rdfs:label": "Document",
-            "unece:cefactElementMetadata": [
-                {
-                    "@id": "cefact:FinancingRequestResult_Document.Details",
-                    "@type": "unece:AggregateBIE",
-                    "unece:cefactUNId": "UN01013224",
-                    "rdfs:comment": "A collection of data that reports the result of a financing request."
-                },
-                {
-                    "@id": "cefact:FinancingSummary_Document.Details",
-                    "@type": "unece:AggregateBIE",
-                    "unece:cefactUNId": "UN01013245",
-                    "rdfs:comment": "A collection of financing related data that provides an overview of key points."
-                },
-                {
-                    "@id": "cefact:FinancingRequest_Document.Details",
-                    "@type": "unece:AggregateBIE",
-                    "unece:cefactUNId": "UN01013228",
-                    "rdfs:comment": "The set of characteristics shared by all individual transactions grouped for this financing request document."
-                }
-            ]
-        },
-        {
-            "@id": "core:Event",
-            "@type": "rdfs:Class",
-            "rdfs:comment": [
-                "A referenced significant occurrence or happening during transport.",
-                "A significant occurrence or happening in a supply chain."
-            ],
-            "rdfs:label": "Event",
-            "unece:cefactElementMetadata": [
-                {
-                    "@id": "cefact:Referenced_Transport_Event.Details",
-                    "@type": "unece:AggregateBIE",
-                    "unece:cefactUNId": "UN01010081",
-                    "rdfs:comment": "A referenced significant occurrence or happening during transport."
-                },
-                {
-                    "@id": "cefact:SupplyChain_Event.Details",
-                    "@type": "unece:AggregateBIE",
-                    "unece:cefactUNId": "UN01004291",
-                    "rdfs:comment": "A significant occurrence or happening in a supply chain."
-                }
-            ]
-        },
-        {
-            "@id": "core:FinancialAccount",
+            "@id": "core:FinancingFinancialAccount",
             "@type": "rdfs:Class",
             "rdfs:comment": "A financial account used internally by a bank to manage the line of credit granted to financing requesting party.",
-            "rdfs:label": "FinancialAccount",
+            "rdfs:label": "FinancingFinancialAccount",
             "unece:cefactElementMetadata": [
                 {
                     "@id": "cefact:Financing_FinancialAccount.Details",
@@ -92,105 +39,52 @@
             ]
         },
         {
-            "@id": "core:FinancialCard",
+            "@id": "core:FinancingRequestDocument",
             "@type": "rdfs:Class",
-            "rdfs:comment": "A card used to represent a financial account for a trade settlement.",
-            "rdfs:label": "FinancialCard",
+            "rdfs:comment": "The set of characteristics shared by all individual transactions grouped for this financing request document.",
+            "rdfs:label": "FinancingRequestDocument",
             "unece:cefactElementMetadata": [
                 {
-                    "@id": "cefact:TradeSettlement_FinancialCard.Details",
+                    "@id": "cefact:FinancingRequest_Document.Details",
                     "@type": "unece:AggregateBIE",
-                    "unece:cefactUNId": "UN01004493",
-                    "rdfs:comment": "A card used to represent a financial account for a trade settlement."
+                    "unece:cefactUNId": "UN01013228",
+                    "rdfs:comment": "The set of characteristics shared by all individual transactions grouped for this financing request document."
                 }
             ]
         },
         {
-            "@id": "core:GeopoliticalRegion",
+            "@id": "core:FinancingRequestResultDocument",
             "@type": "rdfs:Class",
-            "rdfs:comment": "A collection of countries and/or economies united for trade purposes.",
-            "rdfs:label": "GeopoliticalRegion",
+            "rdfs:comment": "A collection of data that reports the result of a financing request.",
+            "rdfs:label": "FinancingRequestResultDocument",
             "unece:cefactElementMetadata": [
                 {
-                    "@id": "cefact:Trade_GeopoliticalRegion.Details",
+                    "@id": "cefact:FinancingRequestResult_Document.Details",
                     "@type": "unece:AggregateBIE",
-                    "unece:cefactUNId": "UN01004587",
-                    "rdfs:comment": "A collection of countries and/or economies united for trade purposes."
+                    "unece:cefactUNId": "UN01013224",
+                    "rdfs:comment": "A collection of data that reports the result of a financing request."
                 }
             ]
         },
         {
-            "@id": "core:Identity",
+            "@id": "core:FinancingSummaryDocument",
             "@type": "rdfs:Class",
-            "rdfs:comment": [
-                "Identification of a person.",
-                "Proprietary information which uniquely identifies a person or organization.",
-                "A financial identification for an organization."
-            ],
-            "rdfs:label": "Identity",
+            "rdfs:comment": "A collection of financing related data that provides an overview of key points.",
+            "rdfs:label": "FinancingSummaryDocument",
             "unece:cefactElementMetadata": [
                 {
-                    "@id": "cefact:Person_Identity.Details",
+                    "@id": "cefact:FinancingSummary_Document.Details",
                     "@type": "unece:AggregateBIE",
-                    "unece:cefactUNId": "UN01013279",
-                    "rdfs:comment": "Identification of a person."
-                },
-                {
-                    "@id": "cefact:Proprietary_Identity.Details",
-                    "@type": "unece:AggregateBIE",
-                    "unece:cefactUNId": "UN01013286",
-                    "rdfs:comment": "Proprietary information which uniquely identifies a person or organization."
-                },
-                {
-                    "@id": "cefact:Financial_Identity.Details",
-                    "@type": "unece:AggregateBIE",
-                    "unece:cefactUNId": "UN01013217",
-                    "rdfs:comment": "A financial identification for an organization."
+                    "unece:cefactUNId": "UN01013245",
+                    "rdfs:comment": "A collection of financing related data that provides an overview of key points."
                 }
             ]
         },
         {
-            "@id": "core:Location",
-            "@type": "rdfs:Class",
-            "rdfs:comment": [
-                "A location where a transport service takes place.",
-                "A logistics related physical location or place."
-            ],
-            "rdfs:label": "Location",
-            "unece:cefactElementMetadata": [
-                {
-                    "@id": "cefact:Logistics_Location.Details",
-                    "@type": "unece:AggregateBIE",
-                    "unece:cefactUNId": "UN01003679",
-                    "rdfs:comment": "A logistics related physical location or place."
-                },
-                {
-                    "@id": "cefact:TransportService_Location.Details",
-                    "@type": "unece:AggregateBIE",
-                    "unece:cefactUNId": "UN01010086",
-                    "rdfs:comment": "A location where a transport service takes place."
-                }
-            ]
-        },
-        {
-            "@id": "core:Party",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "An individual, a group, or a body having a role in a trade business function.",
-            "rdfs:label": "Party",
-            "unece:cefactElementMetadata": [
-                {
-                    "@id": "cefact:Trade_Party.Details",
-                    "@type": "unece:AggregateBIE",
-                    "unece:cefactUNId": "UN01004594",
-                    "rdfs:comment": "An individual, a group, or a body having a role in a trade business function."
-                }
-            ]
-        },
-        {
-            "@id": "core:Payment",
+            "@id": "core:InstalmentPayment",
             "@type": "rdfs:Class",
             "rdfs:comment": "A discharge of obligations in respect of funds or securities, transferred through one of several payments, between two or more parties.",
-            "rdfs:label": "Payment",
+            "rdfs:label": "InstalmentPayment",
             "unece:cefactElementMetadata": [
                 {
                     "@id": "cefact:Instalment_Payment.Details",
@@ -201,10 +95,122 @@
             ]
         },
         {
-            "@id": "core:PaymentDiscountTerms",
+            "@id": "core:LogisticsLocation",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A logistics related physical location or place.",
+            "rdfs:label": "LogisticsLocation",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_Location.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01003679",
+                    "rdfs:comment": "A logistics related physical location or place."
+                }
+            ]
+        },
+        {
+            "@id": "core:PersonIdentity",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Identification of a person.",
+            "rdfs:label": "PersonIdentity",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Person_Identity.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01013279",
+                    "rdfs:comment": "Identification of a person."
+                }
+            ]
+        },
+        {
+            "@id": "core:ProprietaryIdentity",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Proprietary information which uniquely identifies a person or organization.",
+            "rdfs:label": "ProprietaryIdentity",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Proprietary_Identity.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01013286",
+                    "rdfs:comment": "Proprietary information which uniquely identifies a person or organization."
+                }
+            ]
+        },
+        {
+            "@id": "core:Referenced_TransportEvent",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A referenced significant occurrence or happening during transport.",
+            "rdfs:label": "Referenced_TransportEvent",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Referenced_Transport_Event.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01010081",
+                    "rdfs:comment": "A referenced significant occurrence or happening during transport."
+                }
+            ]
+        },
+        {
+            "@id": "core:SupplyChainEvent",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A significant occurrence or happening in a supply chain.",
+            "rdfs:label": "SupplyChainEvent",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SupplyChain_Event.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004291",
+                    "rdfs:comment": "A significant occurrence or happening in a supply chain."
+                }
+            ]
+        },
+        {
+            "@id": "core:TradeAddress",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The location at which a particular trade related organization or person may be found or reached.",
+            "rdfs:label": "TradeAddress",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Address.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004533",
+                    "rdfs:comment": "The location at which a particular trade related organization or person may be found or reached."
+                }
+            ]
+        },
+        {
+            "@id": "core:TradeGeopoliticalRegion",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A collection of countries and/or economies united for trade purposes.",
+            "rdfs:label": "TradeGeopoliticalRegion",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_GeopoliticalRegion.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004587",
+                    "rdfs:comment": "A collection of countries and/or economies united for trade purposes."
+                }
+            ]
+        },
+        {
+            "@id": "core:TradeParty",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "An individual, a group, or a body having a role in a trade business function.",
+            "rdfs:label": "TradeParty",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Party.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004594",
+                    "rdfs:comment": "An individual, a group, or a body having a role in a trade business function."
+                }
+            ]
+        },
+        {
+            "@id": "core:TradePaymentDiscountTerms",
             "@type": "rdfs:Class",
             "rdfs:comment": "Trade terms and conditions by which a discount is or can be applied to a payable amount.",
-            "rdfs:label": "PaymentDiscountTerms",
+            "rdfs:label": "TradePaymentDiscountTerms",
             "unece:cefactElementMetadata": [
                 {
                     "@id": "cefact:Trade_PaymentDiscountTerms.Details",
@@ -215,10 +221,10 @@
             ]
         },
         {
-            "@id": "core:PaymentInstruction",
+            "@id": "core:TradePaymentInstruction",
             "@type": "rdfs:Class",
             "rdfs:comment": "Instructions related to the processing of a trade payment.",
-            "rdfs:label": "PaymentInstruction",
+            "rdfs:label": "TradePaymentInstruction",
             "unece:cefactElementMetadata": [
                 {
                     "@id": "cefact:Trade_PaymentInstruction.Details",
@@ -229,24 +235,10 @@
             ]
         },
         {
-            "@id": "core:PaymentMeans",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "The means by which a payment will be or has been made for trade settlement purposes.",
-            "rdfs:label": "PaymentMeans",
-            "unece:cefactElementMetadata": [
-                {
-                    "@id": "cefact:TradeSettlement_PaymentMeans.Details",
-                    "@type": "unece:AggregateBIE",
-                    "unece:cefactUNId": "UN01004512",
-                    "rdfs:comment": "The means by which a payment will be or has been made for trade settlement purposes."
-                }
-            ]
-        },
-        {
-            "@id": "core:PaymentPenaltyTerms",
+            "@id": "core:TradePaymentPenaltyTerms",
             "@type": "rdfs:Class",
             "rdfs:comment": "Trade terms and conditions by which a penalty is or can be applied to a payable amount.",
-            "rdfs:label": "PaymentPenaltyTerms",
+            "rdfs:label": "TradePaymentPenaltyTerms",
             "unece:cefactElementMetadata": [
                 {
                     "@id": "cefact:Trade_PaymentPenaltyTerms.Details",
@@ -257,13 +249,55 @@
             ]
         },
         {
+            "@id": "core:TradeSettlementFinancialCard",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A card used to represent a financial account for a trade settlement.",
+            "rdfs:label": "TradeSettlementFinancialCard",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:TradeSettlement_FinancialCard.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004493",
+                    "rdfs:comment": "A card used to represent a financial account for a trade settlement."
+                }
+            ]
+        },
+        {
+            "@id": "core:TradeSettlementPaymentMeans",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The means by which a payment will be or has been made for trade settlement purposes.",
+            "rdfs:label": "TradeSettlementPaymentMeans",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:TradeSettlement_PaymentMeans.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004512",
+                    "rdfs:comment": "The means by which a payment will be or has been made for trade settlement purposes."
+                }
+            ]
+        },
+        {
+            "@id": "core:TransportServiceLocation",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A location where a transport service takes place.",
+            "rdfs:label": "TransportServiceLocation",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:TransportService_Location.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01010086",
+                    "rdfs:comment": "A location where a transport service takes place."
+                }
+            ]
+        },
+        {
             "@id": "core:acceptedTransactionOriginalTotalAmount",
             "@type": "rdf:Property",
             "schema:rangeIncludes": {
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": "core:FinancingSummaryDocument"
             },
             "rdfs:comment": "An original total monetary value of accepted transactions in this financing summary document.",
             "rdfs:label": "acceptedTransactionOriginalTotalAmount",
@@ -284,7 +318,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:FinancialAccount"
+                "@id": "core:FinancingFinancialAccount"
             },
             "rdfs:comment": "The account name, expressed as text, of this financing financial account.",
             "rdfs:label": "accountName",
@@ -305,7 +339,7 @@
                 "@id": "core:Party"
             },
             "schema:domainIncludes": {
-                "@id": "core:CountrySubDivision"
+                "@id": ":TradeCountrySubDivision"
             },
             "rdfs:comment": "A party that is authorized to perform an activity in this trade country sub-division.",
             "rdfs:label": "activityAuthorizedParty",
@@ -326,7 +360,7 @@
                 "@id": "xsd:dateTime"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "The date, time, date time or other date time value of the actual arrival related to this transport event.",
             "rdfs:label": "actualArrivalRelatedDateTime",
@@ -347,7 +381,7 @@
                 "@id": "xsd:dateTime"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "The date, time, date time or other date time value of the actual departure related to this transport event.",
             "rdfs:label": "actualDepartureRelatedDateTime",
@@ -368,7 +402,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentDiscountTerms"
+                "@id": "core:TradePaymentDiscountTerms"
             },
             "rdfs:comment": "A monetary value of the actual discount in these trade payment discount terms.",
             "rdfs:label": "actualDiscountAmount",
@@ -389,7 +423,7 @@
                 "@id": "core:Period"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "The actual period of time during which this transport event occurred.",
             "rdfs:label": "actualOccurrencePeriod",
@@ -410,7 +444,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentPenaltyTerms"
+                "@id": "core:TradePaymentPenaltyTerms"
             },
             "rdfs:comment": "A monetary value of the actual penalty in these trade payment penalty terms.",
             "rdfs:label": "actualPenaltyAmount",
@@ -431,7 +465,7 @@
                 "@id": "core:Status"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": "core:SupplyChainEvent"
             },
             "rdfs:comment": "The actual inspection status of this supply chain event.",
             "rdfs:label": "actualStatus",
@@ -452,7 +486,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:FinancialInstitution"
+                "@id": "accounting:CreditorFinancialInstitution"
             },
             "rdfs:comment": "An additional clearing system identifier for this creditor financial institution.",
             "rdfs:label": "additionalClearingSystemId",
@@ -473,7 +507,7 @@
                 "@id": "core:Note"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": "core:FinancingRequestDocument"
             },
             "rdfs:comment": "An additional information note included for this financing request document.",
             "rdfs:label": "additionalInformationIncludedNote",
@@ -494,7 +528,7 @@
                 "@id": "core:Note"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "A note providing additional security measures applicable to this transport event.",
             "rdfs:label": "additionalSecurityMeasuresApplicableNote",
@@ -515,7 +549,7 @@
                 "@id": "unece:UNECECL3131Code"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "A code specifying the type of this trade address, such as business address or home address.",
             "rdfs:label": "addressTypeCode",
@@ -537,7 +571,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Identity"
+                "@id": "core:FinancialIdentity"
             },
             "rdfs:comment": "The agent assigned customer identifier for this financial identity.",
             "rdfs:label": "agentAssignedCustomerId",
@@ -558,7 +592,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": "core:FinancingRequestDocument"
             },
             "rdfs:comment": "Agreement information, expressed as text, in this financing request document, such as a collection mandate.",
             "rdfs:label": "agreementInformation",
@@ -580,7 +614,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Identity"
+                "@id": "core:PersonIdentity"
             },
             "rdfs:comment": "The alien registration identifier for this person.",
             "rdfs:label": "alienRegistrationId",
@@ -601,7 +635,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "A textual description of an anchorage for this transport event.",
             "rdfs:label": "anchorageDescription",
@@ -622,7 +656,7 @@
                 "@id": "xsd:boolean"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "The indication of whether or not this anchorage transport event is or was expected.",
             "rdfs:label": "anchorageExpectedIndicator",
@@ -643,7 +677,7 @@
                 "@id": "core:Certificate"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": [
                 "A process certificate applicable to this trade party.",
@@ -690,7 +724,7 @@
                 "@id": "core:Certification"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "An organizational certification applicable to this trade party.",
             "rdfs:label": "applicableCertification",
@@ -711,7 +745,7 @@
                 "@id": "core:Characteristic"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": [
                 "A sustainability characteristic applicable to this trade party.",
@@ -742,7 +776,7 @@
                 "@id": "core:Declaration"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A specified declaration applicable to this trade party.",
             "rdfs:label": "applicableDeclaration",
@@ -763,7 +797,7 @@
                 "@id": "core:FinancialCard"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentMeans"
+                "@id": "core:TradeSettlementPaymentMeans"
             },
             "rdfs:comment": "A financial card applicable to this trade settlement payment means.",
             "rdfs:label": "applicableFinancialCard",
@@ -784,7 +818,7 @@
                 "@id": "xsd:boolean"
             },
             "schema:domainIncludes": {
-                "@id": "core:FinancialCard"
+                "@id": "core:TradeSettlementFinancialCard"
             },
             "rdfs:comment": "The indication of whether or not this trade settlement financial card is applicable.",
             "rdfs:label": "applicableIndicator",
@@ -805,7 +839,7 @@
                 "@id": "core:Inspection"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": [
                 "A specified inspection applicable to this trade party.",
@@ -836,7 +870,7 @@
                 "@id": "core:Licence"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A specified licence applicable to this trade party.",
             "rdfs:label": "applicableLicence",
@@ -857,7 +891,7 @@
                 "@id": "core:Note"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "A note providing information applicable to this transport event.",
             "rdfs:label": "applicableNote",
@@ -878,7 +912,7 @@
                 "@id": "core:PaymentDiscountTerms"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentTerms"
+                "@id": ":TradePaymentTerms"
             },
             "rdfs:comment": "Trade payment discount terms applicable to these trade payment terms.",
             "rdfs:label": "applicablePaymentDiscountTerms",
@@ -899,7 +933,7 @@
                 "@id": "core:PaymentPenaltyTerms"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentTerms"
+                "@id": ":TradePaymentTerms"
             },
             "rdfs:comment": "Trade payment penalty terms applicable to these trade payment terms.",
             "rdfs:label": "applicablePaymentPenaltyTerms",
@@ -920,7 +954,7 @@
                 "@id": "core:ServiceCharge"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A logistics service charge applicable to this trade party.",
             "rdfs:label": "applicableServiceCharge",
@@ -942,10 +976,10 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:Event"
+                    "@id": "core:LogisticsLocation"
                 },
                 {
-                    "@id": "core:Location"
+                    "@id": ":TransportEvent"
                 }
             ],
             "rdfs:comment": [
@@ -977,7 +1011,7 @@
                 "@id": "core:Party"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A party associated with this trade party, such as a local agent of a shipping line.",
             "rdfs:label": "associatedParty",
@@ -998,7 +1032,7 @@
                 "@id": "core:Reference"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": "core:SupplyChainEvent"
             },
             "rdfs:comment": "A reference associated with this supply chain event.",
             "rdfs:label": "associatedReference",
@@ -1019,7 +1053,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "The name, expressed as text, of a person or department in the organization to whom incoming mail is marked with words such as 'for the attention of' or 'FAO' or 'ATTN' for this trade address.",
             "rdfs:label": "attentionOf",
@@ -1040,7 +1074,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:FinancialInstitution"
+                "@id": "accounting:CreditorFinancialInstitution"
             },
             "rdfs:comment": "The Australian Small Network (SN) identifier as assigned by the Australian Payments Clearing Association (APCA) for this creditor financial institution.",
             "rdfs:label": "australianSNId",
@@ -1062,7 +1096,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": "core:FinancingRequestDocument"
             },
             "rdfs:comment": "An authorization, expressed as text, for this financing request document.",
             "rdfs:label": "authorization",
@@ -1083,7 +1117,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:FinancialAccount"
+                "@id": "core:FinancingFinancialAccount"
             },
             "rdfs:comment": "The unique Basic Bank Account Number (BBAN) identifier used as part of a National Account Numbering Scheme for this financing financial account.",
             "rdfs:label": "bBANId",
@@ -1106,10 +1140,10 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:Identity"
+                    "@id": "core:FinancialIdentity"
                 },
                 {
-                    "@id": "core:Party"
+                    "@id": ":RequestingParty"
                 }
             ],
             "rdfs:comment": [
@@ -1142,7 +1176,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Identity"
+                "@id": "core:FinancialIdentity"
             },
             "rdfs:comment": "The Bank Identifier Code (BIC) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this financial identity.",
             "rdfs:label": "bICId",
@@ -1163,7 +1197,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Identity"
+                "@id": "core:FinancialIdentity"
             },
             "rdfs:comment": "The bank assigned identifier for this financial identity.",
             "rdfs:label": "bankAssignedId",
@@ -1185,10 +1219,10 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:PaymentDiscountTerms"
+                    "@id": "core:TradePaymentDiscountTerms"
                 },
                 {
-                    "@id": "core:PaymentPenaltyTerms"
+                    "@id": "core:TradePaymentPenaltyTerms"
                 }
             ],
             "rdfs:comment": [
@@ -1221,10 +1255,10 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:PaymentDiscountTerms"
+                    "@id": "core:TradePaymentDiscountTerms"
                 },
                 {
-                    "@id": "core:PaymentPenaltyTerms"
+                    "@id": "core:TradePaymentPenaltyTerms"
                 }
             ],
             "rdfs:comment": [
@@ -1257,10 +1291,10 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:PaymentDiscountTerms"
+                    "@id": "core:TradePaymentDiscountTerms"
                 },
                 {
-                    "@id": "core:PaymentPenaltyTerms"
+                    "@id": "core:TradePaymentPenaltyTerms"
                 }
             ],
             "rdfs:comment": [
@@ -1292,7 +1326,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "The brand name, expressed as text, for this trade party.",
             "rdfs:label": "brandName",
@@ -1314,7 +1348,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "The name, expressed as text, of a building, a house or other structure on a street at this trade address.",
             "rdfs:label": "buildingName",
@@ -1335,7 +1369,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "The building number, expressed as text, in this trade address.",
             "rdfs:label": "buildingNumber",
@@ -1356,7 +1390,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "The unique Commercial And Government Entity (CAGE) identifier for this trade party.",
             "rdfs:label": "cAGEId",
@@ -1378,7 +1412,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Identity"
+                "@id": "core:FinancialIdentity"
             },
             "rdfs:comment": "The (United States) Clearing House Interbank Payments System (CHIPS) Universal Identification (UID) as assigned by the New York Clearing House for this financial identity.",
             "rdfs:label": "cHIPSUniversalId",
@@ -1400,10 +1434,10 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:PaymentDiscountTerms"
+                    "@id": "core:TradePaymentDiscountTerms"
                 },
                 {
-                    "@id": "core:PaymentPenaltyTerms"
+                    "@id": "core:TradePaymentPenaltyTerms"
                 }
             ],
             "rdfs:comment": [
@@ -1436,7 +1470,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": "core:FinancingRequestDocument"
             },
             "rdfs:comment": "A cancellation reason, expressed as text, in this financing request document.",
             "rdfs:label": "cancellationReason",
@@ -1457,7 +1491,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:FinancialCard"
+                "@id": "core:TradeSettlementFinancialCard"
             },
             "rdfs:comment": "The cardholder name as it appears on this trade settlement financial card. This may include both an individual authorized to use the card as well as the organization that owns the card.",
             "rdfs:label": "cardholderName",
@@ -1478,7 +1512,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "The name, expressed as text, of a person or organization at this trade address to whom incoming mail is marked with words such as 'care of' or 'C/O'.",
             "rdfs:label": "careOf",
@@ -1499,7 +1533,7 @@
                 "@id": "unece:UNECECL4437Code"
             },
             "schema:domainIncludes": {
-                "@id": "core:FinancialAccount"
+                "@id": "core:FinancingFinancialAccount"
             },
             "rdfs:comment": "The code specifying the type of financing financial account.",
             "rdfs:label": "cashAccountTypeCode",
@@ -1521,7 +1555,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "The identifier of the city for this trade address, such as United Nations Location Code (UNLOCODE).",
             "rdfs:label": "cityId",
@@ -1542,7 +1576,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "The name, expressed as text, of the city, town or village of this trade address.",
             "rdfs:label": "cityName",
@@ -1564,7 +1598,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "A name, expressed as text, of a sub-division of a city for this trade address, for example a district or borough.",
             "rdfs:label": "citySubDivisionName",
@@ -1585,7 +1619,7 @@
                 "@id": "core:Clause"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": "core:FinancingRequestDocument"
             },
             "rdfs:comment": "A contractual document clause specified for this financing request document.",
             "rdfs:label": "contractualClause",
@@ -1606,7 +1640,7 @@
                 "@id": "xsd:boolean"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": "core:FinancingRequestDocument"
             },
             "rdfs:comment": "The indication of whether or not this financing request document is a copy rather than an original.",
             "rdfs:label": "copyIndicator",
@@ -1626,9 +1660,14 @@
             "schema:rangeIncludes": {
                 "@id": "xsd:token"
             },
-            "schema:domainIncludes": {
-                "@id": "core:Address"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "accounting:BirthAddress"
+                },
+                {
+                    "@id": "core:TradeAddress"
+                }
+            ],
             "rdfs:comment": [
                 "The identifier of a country for this birth address.",
                 "The unique identifier of a country for this trade address."
@@ -1659,7 +1698,7 @@
                 "@id": "core:Country"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "The unique identifier of the country for this trade address.",
             "rdfs:label": "countryIdentificationCountry",
@@ -1680,7 +1719,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "A name, expressed as text, of the country for this trade address.",
             "rdfs:label": "countryName",
@@ -1702,10 +1741,10 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:Address"
+                    "@id": "core:LogisticsLocation"
                 },
                 {
-                    "@id": "core:Location"
+                    "@id": "core:TradeAddress"
                 }
             ],
             "rdfs:comment": [
@@ -1738,7 +1777,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "A name, expressed as text, of the sub-division of a country for this trade address.",
             "rdfs:label": "countrySubDivisionName",
@@ -1759,9 +1798,14 @@
             "schema:rangeIncludes": {
                 "@id": "xsd:dateTime"
             },
-            "schema:domainIncludes": {
-                "@id": "core:Document"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": ":ExchangedDocument"
+                },
+                {
+                    "@id": "core:FinancingRequestDocument"
+                }
+            ],
             "rdfs:comment": [
                 "The date, time, date time or other date time value for the creation of this financing request document.",
                 "The date, time, date time, or other date time value of a creation of this exchanged document."
@@ -1791,7 +1835,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:FinancialCard"
+                "@id": "core:TradeSettlementFinancialCard"
             },
             "rdfs:comment": "A monetary value of the credit available for this trade settlement financial card.",
             "rdfs:label": "creditAvailableAmount",
@@ -1812,7 +1856,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:FinancialCard"
+                "@id": "core:TradeSettlementFinancialCard"
             },
             "rdfs:comment": "A monetary value of the credit limit for this trade settlement financial card.",
             "rdfs:label": "creditLimitAmount",
@@ -1833,7 +1877,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentInstruction"
+                "@id": "core:TradePaymentInstruction"
             },
             "rdfs:comment": "Creditor agent information, expressed as text, for this trade payment instruction, such as processing information that may need to be acted upon by the creditor agent.",
             "rdfs:label": "creditorAgentInformation",
@@ -1854,7 +1898,7 @@
                 "@id": "core:FinancialInstitution"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentMeans"
+                "@id": "core:TradeSettlementPaymentMeans"
             },
             "rdfs:comment": "A creditor financial institution specified for this trade settlement payment means.",
             "rdfs:label": "creditorSpecifiedFinancialInstitution",
@@ -1876,10 +1920,10 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:Document"
+                    "@id": "core:FinancingFinancialAccount"
                 },
                 {
-                    "@id": "core:FinancialAccount"
+                    "@id": "core:FinancingRequestDocument"
                 }
             ],
             "rdfs:comment": [
@@ -1912,7 +1956,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "The unique Department Of Defense Activity Address Code (DODAAC) identifier for this trade party.",
             "rdfs:label": "dODAACId",
@@ -1934,7 +1978,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "The unique nine-digit Data Universal Numbering System (DUNS) identifier for this trade party.",
             "rdfs:label": "dUNSId",
@@ -1956,7 +2000,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentInstruction"
+                "@id": "core:TradePaymentInstruction"
             },
             "rdfs:comment": "Debtor agent information, expressed as text, for this trade payment instruction, such as processing information that may need to be acted upon by the debtor agent.",
             "rdfs:label": "debtorAgentInformation",
@@ -1977,7 +2021,7 @@
                 "@id": "core:FinancialInstitution"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentMeans"
+                "@id": "core:TradeSettlementPaymentMeans"
             },
             "rdfs:comment": "A debtor financial institution specified for this trade settlement payment means.",
             "rdfs:label": "debtorSpecifiedFinancialInstitution",
@@ -1998,7 +2042,7 @@
                 "@id": "core:Contact"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A trade contact defined for this trade party.",
             "rdfs:label": "definedContact",
@@ -2019,7 +2063,7 @@
                 "@id": "core:Event"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "A delay specified for this referenced transport event.",
             "rdfs:label": "delaySpecifiedEvent",
@@ -2041,19 +2085,19 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:Address"
+                    "@id": "core:LogisticsLocation"
                 },
                 {
-                    "@id": "core:Event"
+                    "@id": "core:SupplyChainEvent"
                 },
                 {
-                    "@id": "core:Location"
+                    "@id": "core:TradeAddress"
                 },
                 {
-                    "@id": "core:Party"
+                    "@id": "core:TradeParty"
                 },
                 {
-                    "@id": "core:PaymentTerms"
+                    "@id": ":TradePaymentTerms"
                 }
             ],
             "rdfs:comment": [
@@ -2110,7 +2154,7 @@
                 "@id": "xsd:base64Binary"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": "core:SupplyChainEvent"
             },
             "rdfs:comment": "Binary object data, such as a photograph, describing this supply chain event.",
             "rdfs:label": "descriptionBinaryObject",
@@ -2131,7 +2175,7 @@
                 "@id": "core:Communication"
             },
             "schema:domainIncludes": {
-                "@id": "core:Contact"
+                "@id": ":TradeContact"
             },
             "rdfs:comment": "The direct telephone communication information for this trade contact.",
             "rdfs:label": "directTelephoneCommunication",
@@ -2152,7 +2196,7 @@
                 "@id": "xsd:dateTime"
             },
             "schema:domainIncludes": {
-                "@id": "core:Person"
+                "@id": ":TransportPerson"
             },
             "rdfs:comment": "A date, time, date time, or other date time value that this person disembarked from a means of transport.",
             "rdfs:label": "disembarkationDateTime",
@@ -2173,7 +2217,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Identity"
+                "@id": "core:PersonIdentity"
             },
             "rdfs:comment": "The drivers licence identifier for this person.",
             "rdfs:label": "driversLicenceId",
@@ -2195,13 +2239,13 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:Event"
+                    "@id": "core:InstalmentPayment"
                 },
                 {
-                    "@id": "core:Payment"
+                    "@id": "core:SupplyChainEvent"
                 },
                 {
-                    "@id": "core:PaymentTerms"
+                    "@id": ":TradePaymentTerms"
                 }
             ],
             "rdfs:comment": [
@@ -2250,7 +2294,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentTerms"
+                "@id": ":TradePaymentTerms"
             },
             "rdfs:comment": "The measure of a length of time duration specified for these trade payment terms, such as 12 hours, 15 days, 2 weeks, 3 months, 5 years.",
             "rdfs:label": "durationMeasure",
@@ -2272,7 +2316,7 @@
                 "@id": "core:Communication"
             },
             "schema:domainIncludes": {
-                "@id": "core:Contact"
+                "@id": ":TradeContact"
             },
             "rdfs:comment": "Electronic Data Interchange (EDI) communication information for this trade contact.",
             "rdfs:label": "eDICommunication",
@@ -2294,10 +2338,10 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:Contact"
+                    "@id": ":TradeContact"
                 },
                 {
-                    "@id": "core:Party"
+                    "@id": "core:TradeParty"
                 }
             ],
             "rdfs:comment": [
@@ -2329,7 +2373,7 @@
                 "@id": "xsd:dateTime"
             },
             "schema:domainIncludes": {
-                "@id": "core:Person"
+                "@id": ":TransportPerson"
             },
             "rdfs:comment": "A date, time, date time, or other date time value that this person embarked upon a means of transport.",
             "rdfs:label": "embarkationDateTime",
@@ -2350,7 +2394,7 @@
                 "@id": "core:Communication"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "The communication address of the end point URI for this trade party.",
             "rdfs:label": "endPointURICommunication",
@@ -2371,7 +2415,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentTerms"
+                "@id": ":TradePaymentTerms"
             },
             "rdfs:comment": "An equivalent monetary value to be transferred between debtor and creditor before deduction of charges for these trade payment terms, expressed in the currency of the debtor's account which is different from the currency in which it is to be transferred.",
             "rdfs:label": "equivalentAmount",
@@ -2392,7 +2436,7 @@
                 "@id": "xsd:boolean"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "The indication of whether or not this transport event is or was expected.",
             "rdfs:label": "expectedIndicator",
@@ -2413,7 +2457,7 @@
                 "@id": "xsd:base64Binary"
             },
             "schema:domainIncludes": {
-                "@id": "core:FinancialCard"
+                "@id": "core:TradeSettlementFinancialCard"
             },
             "rdfs:comment": "The date of expiry up to which this trade settlement financial card is valid.",
             "rdfs:label": "expiryDate",
@@ -2434,7 +2478,7 @@
                 "@id": "xsd:dateTime"
             },
             "schema:domainIncludes": {
-                "@id": "core:FinancialCard"
+                "@id": "core:TradeSettlementFinancialCard"
             },
             "rdfs:comment": "The date of expiry up to which this trade settlement financial card is valid.",
             "rdfs:label": "expiryDateTime",
@@ -2455,7 +2499,7 @@
                 "@id": "core:Location"
             },
             "schema:domainIncludes": {
-                "@id": "core:Location"
+                "@id": "core:LogisticsLocation"
             },
             "rdfs:comment": "A facility location referenced for this logistics location.",
             "rdfs:label": "facilityLocation",
@@ -2477,10 +2521,10 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:Contact"
+                    "@id": ":TradeContact"
                 },
                 {
-                    "@id": "core:Party"
+                    "@id": "core:TradeParty"
                 }
             ],
             "rdfs:comment": [
@@ -2512,7 +2556,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": "core:FinancingSummaryDocument"
             },
             "rdfs:comment": "The financed applied rate, expressed as a percentage, in this financing summary document.",
             "rdfs:label": "financedAppliedRatePercent",
@@ -2533,7 +2577,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": "core:FinancingRequestResultDocument"
             },
             "rdfs:comment": "The financed rate, expressed as a percentage, in this financing request result document.",
             "rdfs:label": "financedRatePercent",
@@ -2553,9 +2597,14 @@
             "schema:rangeIncludes": {
                 "@id": "xsd:decimal"
             },
-            "schema:domainIncludes": {
-                "@id": "core:Document"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "core:FinancingRequestResultDocument"
+                },
+                {
+                    "@id": "core:FinancingSummaryDocument"
+                }
+            ],
             "rdfs:comment": [
                 "A financed total monetary value in this financing summary document.",
                 "A monetary value of the financed total amount in this financing request result document."
@@ -2585,7 +2634,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": "core:FinancingSummaryDocument"
             },
             "rdfs:comment": "The number of financed transactions specified in this financing summary document.",
             "rdfs:label": "financedTransactionSpecifiedQuantity",
@@ -2606,7 +2655,7 @@
                 "@id": "core:FinancialInstitution"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": "core:FinancingRequestDocument"
             },
             "rdfs:comment": "The creditor financial institution specified as the first agent in this financing request document.",
             "rdfs:label": "firstAgentSpecifiedFinancialInstitution",
@@ -2627,7 +2676,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A Global Location Number (GLN) identifier for this trade party.",
             "rdfs:label": "gLNId",
@@ -2649,7 +2698,7 @@
                 "@id": "core:GeographicalCoordinate"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "An identification of a set of geographical coordinates for this trade address.",
             "rdfs:label": "geoCoordinateIdentificationGeographicalCoordinate",
@@ -2670,7 +2719,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A globally unique identifier of this trade party.",
             "rdfs:label": "globalId",
@@ -2692,7 +2741,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": "core:FinancingRequestDocument"
             },
             "rdfs:comment": "The group identifier in this financing request document.",
             "rdfs:label": "groupId",
@@ -2714,7 +2763,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": "core:FinancingRequestDocument"
             },
             "rdfs:comment": "The number of grouped transactions specified in this financing request document.",
             "rdfs:label": "groupedTransactionSpecifiedQuantity",
@@ -2735,7 +2784,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": "core:FinancingRequestDocument"
             },
             "rdfs:comment": "A total monetary value of grouped transactions in this financing request document.",
             "rdfs:label": "groupedTransactionTotalAmount",
@@ -2756,7 +2805,7 @@
                 "@id": "xsd:boolean"
             },
             "schema:domainIncludes": {
-                "@id": "core:Location"
+                "@id": "core:LogisticsLocation"
             },
             "rdfs:comment": "The indication of whether or not this logistics location is in a health affected area.",
             "rdfs:label": "healthAffectedAreaIndicator",
@@ -2777,7 +2826,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:FinancialAccount"
+                "@id": "core:FinancingFinancialAccount"
             },
             "rdfs:comment": "The unique International Bank Account Number (IBAN) identifier for this financing financial account.",
             "rdfs:label": "iBANId",
@@ -2799,7 +2848,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Identity"
+                "@id": "core:FinancialIdentity"
             },
             "rdfs:comment": "The International Business Entity Identifier (IBEI) for this financial identity.",
             "rdfs:label": "iBEIId",
@@ -2821,25 +2870,28 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:Address"
+                    "@id": "core:LogisticsLocation"
                 },
                 {
-                    "@id": "core:Event"
+                    "@id": "core:ProprietaryIdentity"
                 },
                 {
-                    "@id": "core:FinancialCard"
+                    "@id": "core:SupplyChainEvent"
                 },
                 {
-                    "@id": "core:GeopoliticalRegion"
+                    "@id": "core:TradeAddress"
                 },
                 {
-                    "@id": "core:Identity"
+                    "@id": "core:TradeGeopoliticalRegion"
                 },
                 {
-                    "@id": "core:Location"
+                    "@id": "core:TradeParty"
                 },
                 {
-                    "@id": "core:Party"
+                    "@id": "core:TradeSettlementFinancialCard"
+                },
+                {
+                    "@id": "core:TransportServiceLocation"
                 }
             ],
             "rdfs:comment": [
@@ -2923,7 +2975,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Identity"
+                "@id": "core:ProprietaryIdentity"
             },
             "rdfs:comment": "An identifier type, expressed as text, for this proprietary identity.",
             "rdfs:label": "identificationType",
@@ -2944,7 +2996,7 @@
                 "@id": "core:Cash"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentMeans"
+                "@id": "core:TradeSettlementPaymentMeans"
             },
             "rdfs:comment": "A cash payment identified for this trade settlement payment means.",
             "rdfs:label": "identifiedCash",
@@ -2965,7 +3017,7 @@
                 "@id": "core:Cheque"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentMeans"
+                "@id": "core:TradeSettlementPaymentMeans"
             },
             "rdfs:comment": "A cheque payment identified for this trade settlement payment means.",
             "rdfs:label": "identifiedCheque",
@@ -2986,7 +3038,7 @@
                 "@id": "core:DigitalMethod"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentMeans"
+                "@id": "core:TradeSettlementPaymentMeans"
             },
             "rdfs:comment": "A digital payment method identified for this trade settlement payment means.",
             "rdfs:label": "identifiedDigitalMethod",
@@ -3007,7 +3059,7 @@
                 "@id": "core:Stowaway"
             },
             "schema:domainIncludes": {
-                "@id": "core:Person"
+                "@id": ":TransportPerson"
             },
             "rdfs:comment": "A transport person identified as a found stowaway.",
             "rdfs:label": "identifiedStowaway",
@@ -3028,7 +3080,7 @@
                 "@id": "core:Voucher"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentMeans"
+                "@id": "core:TradeSettlementPaymentMeans"
             },
             "rdfs:comment": "An experience item voucher identified for this trade settlement payment means.",
             "rdfs:label": "identifiedVoucher",
@@ -3049,7 +3101,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Identity"
+                "@id": "core:PersonIdentity"
             },
             "rdfs:comment": "The identity card identifier for this person.",
             "rdfs:label": "identityCardId",
@@ -3070,7 +3122,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": ":ReferencedDocument"
             },
             "rdfs:comment": "A monetary value included in this referenced document.",
             "rdfs:label": "includedAmount",
@@ -3091,7 +3143,7 @@
                 "@id": "core:Country"
             },
             "schema:domainIncludes": {
-                "@id": "core:GeopoliticalRegion"
+                "@id": "core:TradeGeopoliticalRegion"
             },
             "rdfs:comment": "A country included in this trade geopolitical region.",
             "rdfs:label": "includedCountry",
@@ -3112,7 +3164,7 @@
                 "@id": "core:Tax"
             },
             "schema:domainIncludes": {
-                "@id": "core:Payment"
+                "@id": ":AdvancePayment"
             },
             "rdfs:comment": "A tax included in this advance payment.",
             "rdfs:label": "includedTax",
@@ -3133,7 +3185,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentTerms"
+                "@id": ":TradePaymentTerms"
             },
             "rdfs:comment": "Information, expressed as text, for these trade payment terms.",
             "rdfs:label": "information",
@@ -3154,7 +3206,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentInstruction"
+                "@id": "core:TradePaymentInstruction"
             },
             "rdfs:comment": "The code specifying the type of information for this trade payment instruction, such as processing requirements.",
             "rdfs:label": "informationTypeCode",
@@ -3175,7 +3227,7 @@
                 "@id": "core:Event"
             },
             "schema:domainIncludes": {
-                "@id": "core:Location"
+                "@id": "core:LogisticsLocation"
             },
             "rdfs:comment": "A supply chain inspection event at this logistics location.",
             "rdfs:label": "inspectionEvent",
@@ -3196,7 +3248,7 @@
                 "@id": "core:Communication"
             },
             "schema:domainIncludes": {
-                "@id": "core:Contact"
+                "@id": ":TradeContact"
             },
             "rdfs:comment": "Instant messaging communication information for this trade contact.",
             "rdfs:label": "instantMessagingCommunication",
@@ -3217,7 +3269,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentTerms"
+                "@id": ":TradePaymentTerms"
             },
             "rdfs:comment": "A monetary value that has been instructed to be transferred between debtor and creditor for these trade payment terms before deduction of charges.",
             "rdfs:label": "instructedAmount",
@@ -3238,7 +3290,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:FinancialCard"
+                "@id": "core:TradeSettlementFinancialCard"
             },
             "rdfs:comment": "The interest rate expressed as a percentage for this trade settlement financial card.",
             "rdfs:label": "interestRatePercent",
@@ -3259,7 +3311,7 @@
                 "@id": "core:FinancialInstitution"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": "core:FinancingRequestDocument"
             },
             "rdfs:comment": "The creditor financial institution specified as the intermediary in this financing request document.",
             "rdfs:label": "intermediarySpecifiedFinancialInstitution",
@@ -3280,7 +3332,7 @@
                 "@id": "xsd:boolean"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "The indication of whether or not this trade address is invalid.",
             "rdfs:label": "invalidIndicator",
@@ -3301,7 +3353,7 @@
                 "@id": "core:Document"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A referenced notification document issued to this trade party.",
             "rdfs:label": "issuedNotificationReferencedDocument",
@@ -3322,7 +3374,7 @@
                 "@id": "core:Instructions"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": ":ReferencedDocument"
             },
             "rdfs:comment": "Handling instructions specified by the issuer for this referenced document.",
             "rdfs:label": "issuerSpecifiedInstructions",
@@ -3343,7 +3395,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Contact"
+                "@id": ":TradeContact"
             },
             "rdfs:comment": "The job title, position or designation, expressed as text, of this trade contact within an organization, such as Director, Software Engineer, Purchasing Manager.",
             "rdfs:label": "jobTitle",
@@ -3364,7 +3416,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A code specifying a language for this trade party.",
             "rdfs:label": "languageCode",
@@ -3386,7 +3438,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "The fifth free form line, expressed as text, of this trade address.",
             "rdfs:label": "lineFive",
@@ -3408,7 +3460,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "The fourth free form line, expressed as text, of this trade address.",
             "rdfs:label": "lineFour",
@@ -3431,10 +3483,10 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:Document"
+                    "@id": "core:FinancingSummaryDocument"
                 },
                 {
-                    "@id": "core:Party"
+                    "@id": ":RequestingParty"
                 }
             ],
             "rdfs:comment": [
@@ -3466,7 +3518,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "The first free form line, expressed as text, of this trade address.",
             "rdfs:label": "lineOne",
@@ -3488,7 +3540,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "The third free form line, expressed as text, of this trade address.",
             "rdfs:label": "lineThree",
@@ -3510,7 +3562,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "The second free form line, expressed as text, of this trade address.",
             "rdfs:label": "lineTwo",
@@ -3531,9 +3583,14 @@
             "schema:rangeIncludes": {
                 "@id": "unece:UNECECL3227Code"
             },
-            "schema:domainIncludes": {
-                "@id": "core:Location"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "core:LogisticsLocation"
+                },
+                {
+                    "@id": "core:TransportServiceLocation"
+                }
+            ],
             "rdfs:comment": [
                 "A code specifying the type of this logistics related location.",
                 "A code specifying the type of transport service location."
@@ -3565,7 +3622,7 @@
                 "@id": "core:BinaryFile"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A file containing a specified binary representation of a logo associated with this trade party.",
             "rdfs:label": "logoAssociatedBinaryFile",
@@ -3586,7 +3643,7 @@
                 "@id": "core:Document"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "The referenced logo document for this trade party.",
             "rdfs:label": "logoReferencedDocument",
@@ -3607,7 +3664,7 @@
                 "@id": "xsd:boolean"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "The indication of whether or not this transport event is a maritime anchorage.",
             "rdfs:label": "maritimeAnchorageIndicator",
@@ -3628,7 +3685,7 @@
                 "@id": "xsd:boolean"
             },
             "schema:domainIncludes": {
-                "@id": "core:FinancialCard"
+                "@id": "core:TradeSettlementFinancialCard"
             },
             "rdfs:comment": "The indication of whether or not this trade settlement financial card has a microchip.",
             "rdfs:label": "microchipIndicator",
@@ -3649,7 +3706,7 @@
                 "@id": "core:Communication"
             },
             "schema:domainIncludes": {
-                "@id": "core:Contact"
+                "@id": ":TradeContact"
             },
             "rdfs:comment": "The mobile telephone communication information for this trade contact.",
             "rdfs:label": "mobileTelephoneCommunication",
@@ -3671,13 +3728,16 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:GeopoliticalRegion"
+                    "@id": "core:LogisticsLocation"
                 },
                 {
-                    "@id": "core:Location"
+                    "@id": "core:TradeGeopoliticalRegion"
                 },
                 {
-                    "@id": "core:Party"
+                    "@id": "core:TradeParty"
+                },
+                {
+                    "@id": "core:TransportServiceLocation"
                 }
             ],
             "rdfs:comment": [
@@ -3728,7 +3788,7 @@
                 "@id": "xsd:dateTime"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": "core:SupplyChainEvent"
             },
             "rdfs:comment": "A date, time, date time, or other date time value of an occurrence of this supply chain event.",
             "rdfs:label": "occurrenceDateTime",
@@ -3750,7 +3810,7 @@
                 "@id": "core:Location"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": "core:SupplyChainEvent"
             },
             "rdfs:comment": [
                 "A logistics location where this supply chain event occurs.",
@@ -3780,9 +3840,14 @@
             "schema:rangeIncludes": {
                 "@id": "core:Period"
             },
-            "schema:domainIncludes": {
-                "@id": "core:Event"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "core:Referenced_TransportEvent"
+                },
+                {
+                    "@id": "core:SupplyChainEvent"
+                }
+            ],
             "rdfs:comment": [
                 "A specified period of time during which this supply chain event occurs.",
                 "A specified period of time for the occurrence of this referenced transport event."
@@ -3812,7 +3877,7 @@
                 "@id": "core:FinancialAccount"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "The creditor financial account owned by this trade party.",
             "rdfs:label": "ownedFinancialAccount",
@@ -3833,7 +3898,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:Payment"
+                "@id": "core:InstalmentPayment"
             },
             "rdfs:comment": "A monetary value paid or to be paid for this instalment payment.",
             "rdfs:label": "paidAmount",
@@ -3855,7 +3920,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentTerms"
+                "@id": ":TradePaymentTerms"
             },
             "rdfs:comment": "A partial payment, expressed as a percent, in these trade payment terms.",
             "rdfs:label": "partialPaymentPercent",
@@ -3876,7 +3941,7 @@
                 "@id": "unece:UNECECL3035Code"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A code specifying the role of this trade party.",
             "rdfs:label": "partyRoleCode",
@@ -3898,7 +3963,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Identity"
+                "@id": "core:PersonIdentity"
             },
             "rdfs:comment": "The passport identifier for this person.",
             "rdfs:label": "passportId",
@@ -3919,7 +3984,7 @@
                 "@id": "core:FinancialAccount"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentMeans"
+                "@id": "core:TradeSettlementPaymentMeans"
             },
             "rdfs:comment": "A creditor financial account of the payee party for this trade settlement payment means.",
             "rdfs:label": "payeePartyFinancialAccount",
@@ -3940,7 +4005,7 @@
                 "@id": "core:FinancialInstitution"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentMeans"
+                "@id": "core:TradeSettlementPaymentMeans"
             },
             "rdfs:comment": "The creditor financial institution of the payee party specified for this trade settlement payment means.",
             "rdfs:label": "payeeSpecifiedFinancialInstitution",
@@ -3961,7 +4026,7 @@
                 "@id": "core:FinancialAccount"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentMeans"
+                "@id": "core:TradeSettlementPaymentMeans"
             },
             "rdfs:comment": "The debtor financial account of the payer party for this trade settlement payment means.",
             "rdfs:label": "payerPartyFinancialAccount",
@@ -3982,7 +4047,7 @@
                 "@id": "core:FinancialInstitution"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentMeans"
+                "@id": "core:TradeSettlementPaymentMeans"
             },
             "rdfs:comment": "The debtor financial institution of the payer party specified for this trade settlement payment means.",
             "rdfs:label": "payerSpecifiedFinancialInstitution",
@@ -4003,7 +4068,7 @@
                 "@id": "unece:UNECECL4431Code"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentMeans"
+                "@id": "core:TradeSettlementPaymentMeans"
             },
             "rdfs:comment": "The code specifying the method of guarantee for this trade settlement payment means.",
             "rdfs:label": "paymentGuaranteeMeansGuaranteeMethodCode",
@@ -4025,7 +4090,7 @@
                 "@id": "unece:UNECECL4435Code"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentMeans"
+                "@id": "core:TradeSettlementPaymentMeans"
             },
             "rdfs:comment": "The code specifying the payment channel through which this trade settlement payment is to be processed (Reference United Nations Code List (UNCL) 4435).",
             "rdfs:label": "paymentMeansChannelPaymentChannelCode",
@@ -4047,7 +4112,7 @@
                 "@id": "unece:UNECECL4461Code"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentMeans"
+                "@id": "core:TradeSettlementPaymentMeans"
             },
             "rdfs:comment": "The code specifying the type of trade settlement payment means, such as cash or check.",
             "rdfs:label": "paymentMeansTypeCode",
@@ -4069,7 +4134,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentMeans"
+                "@id": "core:TradeSettlementPaymentMeans"
             },
             "rdfs:comment": "The code specifying the method by which a payment may be made for this trade settlement payment means.",
             "rdfs:label": "paymentMethodCode",
@@ -4090,7 +4155,7 @@
                 "@id": "unece:UNECECL4279Code"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentTerms"
+                "@id": ":TradePaymentTerms"
             },
             "rdfs:comment": "A code specifying the type of trade payment terms.",
             "rdfs:label": "paymentTermsTypeCode",
@@ -4112,7 +4177,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Contact"
+                "@id": ":TradeContact"
             },
             "rdfs:comment": "A unique identifier for this trade contact person.",
             "rdfs:label": "personId",
@@ -4133,9 +4198,14 @@
             "schema:rangeIncludes": {
                 "@id": "core:GeographicalCoordinate"
             },
-            "schema:domainIncludes": {
-                "@id": "core:Location"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "core:LogisticsLocation"
+                },
+                {
+                    "@id": "core:TransportServiceLocation"
+                }
+            ],
             "rdfs:comment": [
                 "Geographical coordinate information for this logistics related location.",
                 "Geographical coordinate information for this physical transport service location."
@@ -4165,7 +4235,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "A pilot boarding place, expressed as text, for this transport event.",
             "rdfs:label": "pilotBoardingPlace",
@@ -4186,7 +4256,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "The unique identifier, expressed as text, of a container commonly referred to as a box, in a post office or other postal service location, assigned to a person or organization, where postal items may be kept for this trade address.",
             "rdfs:label": "postOfficeBox",
@@ -4209,10 +4279,10 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:Location"
+                    "@id": "core:LogisticsLocation"
                 },
                 {
-                    "@id": "core:Party"
+                    "@id": "core:TradeParty"
                 }
             ],
             "rdfs:comment": [
@@ -4244,7 +4314,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "A code specifying the postcode of this trade address.",
             "rdfs:label": "postcodeCode",
@@ -4267,10 +4337,10 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:Event"
+                    "@id": "core:LogisticsLocation"
                 },
                 {
-                    "@id": "core:Location"
+                    "@id": ":TransportEvent"
                 }
             ],
             "rdfs:comment": [
@@ -4302,7 +4372,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:FinancialAccount"
+                "@id": "core:FinancingFinancialAccount"
             },
             "rdfs:comment": "The proprietary identifier for this financing financial account.",
             "rdfs:label": "proprietaryId",
@@ -4325,10 +4395,10 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:Document"
+                    "@id": "core:FinancingFinancialAccount"
                 },
                 {
-                    "@id": "core:FinancialAccount"
+                    "@id": ":ReferencedDocument"
                 }
             ],
             "rdfs:comment": [
@@ -4360,7 +4430,7 @@
                 "@id": "core:Process"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A production process provided by this trade party.",
             "rdfs:label": "providedProcess",
@@ -4381,7 +4451,7 @@
                 "@id": "core:Service"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A transport service provided by this trade party.",
             "rdfs:label": "providedService",
@@ -4402,7 +4472,7 @@
                 "@id": "xsd:boolean"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "The indication of whether or not this trade party is quality assured.",
             "rdfs:label": "qualityAssuranceIndicator",
@@ -4423,7 +4493,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "The unique Routing Identifier Code (RIC) identifier for this trade party.",
             "rdfs:label": "rICId",
@@ -4445,7 +4515,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": "core:Referenced_TransportEvent"
             },
             "rdfs:comment": "The code specifying the reason type for this referenced transport event.",
             "rdfs:label": "reasonTypeCode",
@@ -4467,7 +4537,7 @@
                 "@id": "xsd:dateTime"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "The date, time, date time, or other date time value when information related to this transport event was received, from the perspective of the receiver.",
             "rdfs:label": "receivedDateTime",
@@ -4488,7 +4558,7 @@
                 "@id": "xsd:dateTime"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": ":ReferencedDocument"
             },
             "rdfs:comment": "The reference date or date time for this referenced document.",
             "rdfs:label": "referenceDateTime",
@@ -4509,7 +4579,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A registered identifier of this trade party.",
             "rdfs:label": "registeredId",
@@ -4531,7 +4601,7 @@
                 "@id": "core:Batch"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A product batch related to this trade party.",
             "rdfs:label": "relatedBatch",
@@ -4552,7 +4622,7 @@
                 "@id": "core:Booking"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": "core:FinancingSummaryDocument"
             },
             "rdfs:comment": "The financial booking related to this financing summary document.",
             "rdfs:label": "relatedBooking",
@@ -4573,7 +4643,7 @@
                 "@id": "core:Characteristic"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": "core:SupplyChainEvent"
             },
             "rdfs:comment": [
                 "A sustainability characteristic related to this supply chain event.",
@@ -4604,7 +4674,7 @@
                 "@id": "core:Material"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "Material related to this trade party.",
             "rdfs:label": "relatedMaterial",
@@ -4625,7 +4695,7 @@
                 "@id": "core:Observation"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "An observation related to this transport event.",
             "rdfs:label": "relatedObservation",
@@ -4646,7 +4716,7 @@
                 "@id": "core:Route"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "The route related to this transport event.",
             "rdfs:label": "relatedRoute",
@@ -4667,7 +4737,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "The code specifying the type of reported condition for this transport event.",
             "rdfs:label": "reportedConditionTypeCode",
@@ -4689,7 +4759,7 @@
                 "@id": "core:IOTDevice"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "An IOT device for this transport reporting event.",
             "rdfs:label": "reportingIOTDevice",
@@ -4710,7 +4780,7 @@
                 "@id": "core:Document"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A referenced notification document requested by this trade party.",
             "rdfs:label": "requestedNotificationReferencedDocument",
@@ -4731,7 +4801,7 @@
                 "@id": "core:Service"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "A requested service related to this transport event.",
             "rdfs:label": "requestedRelatedService",
@@ -4752,7 +4822,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Contact"
+                "@id": ":TradeContact"
             },
             "rdfs:comment": "A responsibility, expressed as text, of this trade contact.",
             "rdfs:label": "responsibility",
@@ -4773,7 +4843,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A role, expressed as text, for this trade party.",
             "rdfs:label": "role",
@@ -4793,9 +4863,14 @@
             "schema:rangeIncludes": {
                 "@id": "xsd:dateTime"
             },
-            "schema:domainIncludes": {
-                "@id": "core:Event"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "core:Referenced_TransportEvent"
+                },
+                {
+                    "@id": ":TransportEvent"
+                }
+            ],
             "rdfs:comment": [
                 "The date, time, date time or other date time value of the scheduled arrival related to this referenced transport event.",
                 "The date, time, date time or other date time value of the scheduled arrival related to this transport event."
@@ -4825,9 +4900,14 @@
             "schema:rangeIncludes": {
                 "@id": "xsd:dateTime"
             },
-            "schema:domainIncludes": {
-                "@id": "core:Event"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "core:Referenced_TransportEvent"
+                },
+                {
+                    "@id": ":TransportEvent"
+                }
+            ],
             "rdfs:comment": [
                 "The date, time, date time or other date time value of the scheduled departure related to this referenced transport event.",
                 "The date, time, date time or other date time value of the scheduled departure related to this transport event."
@@ -4858,7 +4938,7 @@
                 "@id": "core:Period"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "The scheduled period of time specified for the occurrence of this transport event.",
             "rdfs:label": "scheduledOccurrencePeriod",
@@ -4879,7 +4959,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "A security level code for this transport event.",
             "rdfs:label": "securityLevelCode",
@@ -4900,7 +4980,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Payment"
+                "@id": "core:InstalmentPayment"
             },
             "rdfs:comment": "The sequence identifier for this instalment payment.",
             "rdfs:label": "sequenceId",
@@ -4921,7 +5001,7 @@
                 "@id": "core:Party"
             },
             "schema:domainIncludes": {
-                "@id": "core:Location"
+                "@id": "core:LogisticsLocation"
             },
             "rdfs:comment": "A servicing party specified for this logistics related location.",
             "rdfs:label": "servicingSpecifiedParty",
@@ -4942,7 +5022,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Identity"
+                "@id": "core:PersonIdentity"
             },
             "rdfs:comment": "The social security identifier for this person.",
             "rdfs:label": "socialSecurityId",
@@ -4963,7 +5043,7 @@
                 "@id": "core:Accreditation"
             },
             "schema:domainIncludes": {
-                "@id": "core:Person"
+                "@id": ":TransportPerson"
             },
             "rdfs:comment": "A certified accreditation specific to this transport person.",
             "rdfs:label": "specificAccreditation",
@@ -4984,7 +5064,7 @@
                 "@id": "core:Document"
             },
             "schema:domainIncludes": {
-                "@id": "core:Payment"
+                "@id": "core:InstalmentPayment"
             },
             "rdfs:comment": "The financing request result document specified for this instalment payment.",
             "rdfs:label": "specifiedDocument",
@@ -5005,7 +5085,7 @@
                 "@id": "core:Event"
             },
             "schema:domainIncludes": {
-                "@id": "core:Location"
+                "@id": "core:LogisticsLocation"
             },
             "rdfs:comment": "An inspection event specified for this logistics location.",
             "rdfs:label": "specifiedEvent",
@@ -5026,7 +5106,7 @@
                 "@id": "core:Facility"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A production facility specified for this trade party.",
             "rdfs:label": "specifiedFacility",
@@ -5048,13 +5128,13 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:Document"
+                    "@id": "core:FinancingSummaryDocument"
                 },
                 {
-                    "@id": "core:Party"
+                    "@id": ":RequestingParty"
                 },
                 {
-                    "@id": "core:PaymentMeans"
+                    "@id": "core:TradeSettlementPaymentMeans"
                 }
             ],
             "rdfs:comment": [
@@ -5095,10 +5175,10 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:Party"
+                    "@id": "core:TradeParty"
                 },
                 {
-                    "@id": "core:PaymentMeans"
+                    "@id": "core:TradeSettlementPaymentMeans"
                 }
             ],
             "rdfs:comment": [
@@ -5131,13 +5211,16 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:FinancialInstitution"
+                    "@id": "accounting:CreditorFinancialInstitution"
                 },
                 {
-                    "@id": "core:Identity"
+                    "@id": "core:PersonIdentity"
                 },
                 {
-                    "@id": "core:Party"
+                    "@id": ":RequestingParty"
+                },
+                {
+                    "@id": "core:TradeParty"
                 }
             ],
             "rdfs:comment": [
@@ -5192,9 +5275,14 @@
             "schema:rangeIncludes": {
                 "@id": "core:Location"
             },
-            "schema:domainIncludes": {
-                "@id": "core:Party"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": ":LocationParty"
+                },
+                {
+                    "@id": "core:TradeParty"
+                }
+            ],
             "rdfs:comment": [
                 "A logistics location or place specified for this party.",
                 "A logistics related location or place specified for this trade party."
@@ -5224,7 +5312,7 @@
                 "@id": "core:Note"
             },
             "schema:domainIncludes": {
-                "@id": "core:Contact"
+                "@id": ":TradeContact"
             },
             "rdfs:comment": "A note specified for this trade contact.",
             "rdfs:label": "specifiedNote",
@@ -5245,7 +5333,7 @@
                 "@id": "core:Organization"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "The legally constituted organization specified for this trade party.",
             "rdfs:label": "specifiedOrganization",
@@ -5266,7 +5354,7 @@
                 "@id": "core:Party"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": "core:FinancingRequestDocument"
             },
             "rdfs:comment": "The requesting party specified in this financing request document.",
             "rdfs:label": "specifiedParty",
@@ -5287,7 +5375,7 @@
                 "@id": "core:Person"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": [
                 "A contact person specified for this trade party.",
@@ -5326,7 +5414,7 @@
                 "@id": "core:Product"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A product specified for this trade party.",
             "rdfs:label": "specifiedProduct",
@@ -5347,7 +5435,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:Country"
+                "@id": ":TradeCountry"
             },
             "rdfs:comment": "A quantity specified for this trade country.",
             "rdfs:label": "specifiedQuantity",
@@ -5368,7 +5456,7 @@
                 "@id": "core:Registration"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": [
                 "A governmental registration specified for this trade party.",
@@ -5399,7 +5487,7 @@
                 "@id": "core:RiskAnalysisResult"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A result of a logistics risk analysis calculation specified for this trade party.",
             "rdfs:label": "specifiedRiskAnalysisResult",
@@ -5419,9 +5507,14 @@
             "schema:rangeIncludes": {
                 "@id": "core:Status"
             },
-            "schema:domainIncludes": {
-                "@id": "core:Document"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "core:FinancingRequestDocument"
+                },
+                {
+                    "@id": "core:FinancingRequestResultDocument"
+                }
+            ],
             "rdfs:comment": [
                 "A status of a cancellation specified for this financing request document, such as accepted.",
                 "The financing status specified in this financing request result document.",
@@ -5459,7 +5552,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": ":AcknowledgementDocument"
             },
             "rdfs:comment": "A status, expressed as text, for this acknowledgement document.",
             "rdfs:label": "status",
@@ -5480,7 +5573,7 @@
                 "@id": "core:Period"
             },
             "schema:domainIncludes": {
-                "@id": "core:Location"
+                "@id": "core:LogisticsLocation"
             },
             "rdfs:comment": "A period of stay at this logistics location.",
             "rdfs:label": "stayPeriod",
@@ -5501,7 +5594,7 @@
                 "@id": "core:Event"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "A stay specified for this referenced transport event.",
             "rdfs:label": "staySpecifiedEvent",
@@ -5522,7 +5615,7 @@
                 "@id": "xsd:string"
             },
             "schema:domainIncludes": {
-                "@id": "core:Address"
+                "@id": "core:TradeAddress"
             },
             "rdfs:comment": "A name, expressed as text, of a street or thoroughfare for this trade address.",
             "rdfs:label": "streetName",
@@ -5543,7 +5636,7 @@
                 "@id": "core:Party"
             },
             "schema:domainIncludes": {
-                "@id": "core:Party"
+                "@id": "core:TradeParty"
             },
             "rdfs:comment": "A subcontractor for this trade party.",
             "rdfs:label": "subcontractorParty",
@@ -5564,7 +5657,7 @@
                 "@id": "core:Location"
             },
             "schema:domainIncludes": {
-                "@id": "core:Location"
+                "@id": "core:LogisticsLocation"
             },
             "rdfs:comment": "A location subordinate to this logistics related location.",
             "rdfs:label": "subordinateLocation",
@@ -5585,7 +5678,7 @@
                 "@id": "core:Location"
             },
             "schema:domainIncludes": {
-                "@id": "core:Location"
+                "@id": "core:LogisticsLocation"
             },
             "rdfs:comment": "A logistics location subordinate to this logistics location.",
             "rdfs:label": "subordinateRelatedLocation",
@@ -5606,7 +5699,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:Document"
+                "@id": ":ReferencedDocument"
             },
             "rdfs:comment": "A code specifying a subtype of this referenced document.",
             "rdfs:label": "subtypeCode",
@@ -5628,10 +5721,10 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:Contact"
+                    "@id": ":TradeContact"
                 },
                 {
-                    "@id": "core:Party"
+                    "@id": "core:TradeParty"
                 }
             ],
             "rdfs:comment": [
@@ -5663,7 +5756,7 @@
                 "@id": "core:Communication"
             },
             "schema:domainIncludes": {
-                "@id": "core:Contact"
+                "@id": ":TradeContact"
             },
             "rdfs:comment": "Telegraphy (Telex) communication information for this trade contact.",
             "rdfs:label": "telexCommunication",
@@ -5684,7 +5777,7 @@
                 "@id": "xsd:dateTime"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": "core:SupplyChainEvent"
             },
             "rdfs:comment": "A time value of an occurrence of this supply chain event.",
             "rdfs:label": "timeOccurrenceDateTime",
@@ -5706,7 +5799,7 @@
                 "@id": "unece:UNECECL4277Code"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentTerms"
+                "@id": ":TradePaymentTerms"
             },
             "rdfs:comment": "An identifier of a direct debit mandate in these trade payment terms.",
             "rdfs:label": "tradePaymentTermsDirectDebitMandateId",
@@ -5728,7 +5821,7 @@
                 "@id": "unece:UNECECL4279Code"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentTerms"
+                "@id": ":TradePaymentTerms"
             },
             "rdfs:comment": "A code specifying a type of instruction for these trade payment terms.",
             "rdfs:label": "tradePaymentTermsInstructionTypeCode",
@@ -5750,7 +5843,7 @@
                 "@id": "unece:UNECECL4277Code"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentTerms"
+                "@id": ":TradePaymentTerms"
             },
             "rdfs:comment": "An identifier of a payment means in these trade payment terms.",
             "rdfs:label": "tradePaymentTermsPaymentMeansId",
@@ -5772,7 +5865,7 @@
                 "@id": "unece:UNECECL4461Code"
             },
             "schema:domainIncludes": {
-                "@id": "core:PaymentMeans"
+                "@id": "core:TradeSettlementPaymentMeans"
             },
             "rdfs:comment": "An identifier for this trade settlement payment means.",
             "rdfs:label": "tradeSettlementPaymentMeansId",
@@ -5795,19 +5888,19 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:CountrySubDivision"
+                    "@id": "core:SupplyChainEvent"
                 },
                 {
-                    "@id": "core:Event"
+                    "@id": ":TradeCountrySubDivision"
                 },
                 {
-                    "@id": "core:FinancialCard"
+                    "@id": "core:TradeGeopoliticalRegion"
                 },
                 {
-                    "@id": "core:GeopoliticalRegion"
+                    "@id": "core:TradeParty"
                 },
                 {
-                    "@id": "core:Party"
+                    "@id": "core:TradeSettlementFinancialCard"
                 }
             ],
             "rdfs:comment": [
@@ -5864,7 +5957,7 @@
                 "@id": "xsd:token"
             },
             "schema:domainIncludes": {
-                "@id": "core:FinancialAccount"
+                "@id": "core:FinancingFinancialAccount"
             },
             "rdfs:comment": "The unique Universal Payment Identification Code (UPIC) identifier used by the New York Clearing House for this financing financial account.",
             "rdfs:label": "uPICId",
@@ -5887,10 +5980,10 @@
             },
             "schema:domainIncludes": [
                 {
-                    "@id": "core:Contact"
+                    "@id": ":TradeContact"
                 },
                 {
-                    "@id": "core:Party"
+                    "@id": "core:TradeParty"
                 }
             ],
             "rdfs:comment": [
@@ -5922,7 +6015,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:Location"
+                "@id": "core:LogisticsLocation"
             },
             "rdfs:comment": "The time offset value from the Universal Time Coordinate (UTC) for this logistics related location.",
             "rdfs:label": "uTCOffsetNumeric",
@@ -5942,9 +6035,14 @@
             "schema:rangeIncludes": {
                 "@id": "xsd:decimal"
             },
-            "schema:domainIncludes": {
-                "@id": "core:Event"
-            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "core:SupplyChainEvent"
+                },
+                {
+                    "@id": ":TransportEvent"
+                }
+            ],
             "rdfs:comment": [
                 "A number of units for this supply chain event.",
                 "The number of units for this transport event."
@@ -5974,7 +6072,7 @@
                 "@id": "core:Communication"
             },
             "schema:domainIncludes": {
-                "@id": "core:Contact"
+                "@id": ":TradeContact"
             },
             "rdfs:comment": "Voice Over Internet Protocol (VOIP) communication information for this trade contact.",
             "rdfs:label": "vOIPCommunication",
@@ -5995,7 +6093,7 @@
                 "@id": "xsd:dateTime"
             },
             "schema:domainIncludes": {
-                "@id": "core:FinancialCard"
+                "@id": "core:TradeSettlementFinancialCard"
             },
             "rdfs:comment": "The date from which this trade settlement financial card is valid.",
             "rdfs:label": "validFromDateTime",
@@ -6016,7 +6114,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:Event"
+                "@id": ":TransportEvent"
             },
             "rdfs:comment": "The measure of a value for this transport event.",
             "rdfs:label": "valueMeasure",
@@ -6037,7 +6135,7 @@
                 "@id": "xsd:decimal"
             },
             "schema:domainIncludes": {
-                "@id": "core:FinancialCard"
+                "@id": "core:TradeSettlementFinancialCard"
             },
             "rdfs:comment": "The unique card verification number for security purposes to help verify the card user is in actual possession of this trade settlement financial card.",
             "rdfs:label": "verificationNumeric",

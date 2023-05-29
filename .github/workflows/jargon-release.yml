@@ -1,0 +1,14 @@
+name: jargon_onRelease
+
+on:
+  repository_dispatch:
+    types: [ 'jargon_onRelease' ]
+
+jobs:
+
+  jargon_release:
+    uses: uncefact/.github/.github/workflows/jargon-release.yml@main
+    with:
+      vocabulary_name: core
+    secrets: inherit
+
